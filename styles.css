@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    padding-top: 3em;
+}
+
+.backgroundContainer{
+    width: 94%;
+    margin: auto;
+    padding: 8em 1.5em;
+    background-color: hsl(185, 75%, 39%);
+    position: relative;
+    overflow: hidden;
+}
+
+div .bg-pattern-top{
+    width: 23.5%;
+    margin: auto;
+    height: auto;
+    position: absolute;
+    top: -13em;
+    left: 6em;
+    transform: scale(2.6); 
+}
+
+div .bg-pattern-bottom{
+    width: 22.5%;
+    margin: auto;
+    height: auto;
+    position: absolute;
+    bottom: -16em;
+    right: 8em;
+    transform: scale(2.5);
+}
+
+.cardContainer{
+    width: 20em;
+    margin: auto;
+    padding-bottom: 1.4em;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1em;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    z-index: 3;
+    position: relative;
+}
+
+.headerImage{
+    width: 100%;
+    margin: auto;
+    border-radius: 1em 1em 0 0;
+    position: relative;
+}
+
+.userImage{
+    width: 6.5em;
+    margin: auto;
+    height: auto;
+    border: 4px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 19%;
+    left: 34%;
+}
+
+.namePlace{
+    text-align: center;
+    padding: 4em 0 1.5em 0;
+    font-weight: 700;
+}
+
+.displayInline{
+    display: inline;
+}
+
+h1{
+    font-size: large;
+}
+
+span{
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    padding-left: 0.3em;
+}
+
+.spaceLondon{
+    font-size: 0.85em;
+    padding-top: 0.6em;
+}
+
+hr{
+    border: 0.2px solid  hsl(0, 2%, 92%);
+}
+
+.stats{
+    text-align: center;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    padding: 1.5em 1em 0 1em;
+}
+
+.statsNumbers{
+    font-size: large;
+    font-weight: 700;
+    padding-bottom: 0.3em;
+}
+
+.statsTexts{
+    font-size: 0.65em;
+    letter-spacing: 0.1em;
+    color: hsl(227, 10%, 46%);
+}
+
+@media (min-width: 392px) and (max-width: 1280px) {
+    .cardContainer{
+        width: 18em;
+    }
+
+    .userImage{
+        width: 6.2em;
+    }
+}
+
+@media (max-width: 392px) {
+    .cardContainer{
+        width: 17em;
+    }
+
+    .userImage{
+        width: 6.2em;
+    }
+}
+
+/* 
+Challenges: 
+Making the background circles opaque and responsive
+*/
